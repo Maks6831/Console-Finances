@@ -86,3 +86,12 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+/* pseudocode 
+
+* I think the total number of months can be acquire merely doing a .length
+of the finance variable
+* then i need to create a for loop which adds the value of the profit/losses and puts it into a variable
+* i need to create a for loop which work out changes in profit/loss and store in an array called variable.
+* sum the array and then divide by total number of months. 
+* 
