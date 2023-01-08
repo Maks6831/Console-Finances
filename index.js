@@ -149,8 +149,8 @@ console.log(averageChange);
 
 //------------------------------------------------------- Calculate the largest smallest values in profit losses -------------------------------------//
  
-let largest = 0;
-
+let largest = 0; // create largest to store max value
+// for loop: if largest is smaller than numbers[i] then largest = numbers[i]
 for (i = 0; i < numbers.length; i++) {
     if (largest < numbers[i]) {
         largest = numbers[i];
@@ -159,8 +159,8 @@ for (i = 0; i < numbers.length; i++) {
 
 console.log(largest)
 
-let smallest = 0;
-
+let smallest = 0; // smallest to store min value
+// for loop: if smallest is larger than numbers[i] then smallest = numbers[i]
 for (i = 0 ; i < numbers.length; i++) {
     if (smallest > numbers[i]) {
         smallest = numbers[i];
