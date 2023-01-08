@@ -94,4 +94,39 @@ of the finance variable
 * then i need to create a for loop which adds the value of the profit/losses and puts it into a variable
 * i need to create a for loop which work out changes in profit/loss and store in an array called variable.
 * sum the array and then divide by total number of months. 
-* 
+*/
+
+// no. of months total //
+console.log(finances.length) 
+
+const monthNum = finances.length;
+let pfSum = 0;
+
+for (i = 0; i < monthNum; i++) {
+    pfSum += finances[i][1]
+}
+
+// sum of profit/loss //
+console.log(pfSum)
+
+let numbers = [];
+
+for (i = 0; i < monthNum; i++) {
+    numbers.push(finances[i][1]);
+}
+// new array with just the numbers // 
+console.log(numbers)
+
+let changes = [];
+
+for (i = 0; i < numbers.length; i++) {
+    changes.push(numbers[i] - numbers[i-1]);
+}
+
+// new array with just changes // 
+console.log(changes);
+
+changes.splice(0, 1, finances[0][1]);
+
+console.log(changes)
+
