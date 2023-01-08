@@ -187,10 +187,12 @@ console.log(smallest)
 
 //-----------------------------------------------------------------formatting numbers to display as currency-----------------------------------------//
 
-let pfSumFormatted = new Intl.NumberFormat('en-US', {
-    style: 'Currency',
+const numberFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
     currency: 'USD',
-}).format(pfSum);
+})
+
+
 
 //-------------------------------------------------------------------- console display --------------------------------------------------------------//
 
@@ -198,7 +200,7 @@ console.log(`
 Financial Analysis
 --------------------------
 Total months: ${monthNum}
-Total: ${pfSumFormatted}
+Total: ${numberFormatter.format(pfSum)}
 Average Change: ${averageChange}
 Greatest Increase in Profits: ${largest}
 Greatest Decrease in Profits: ${smallest}
