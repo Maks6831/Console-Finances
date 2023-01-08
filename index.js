@@ -201,9 +201,9 @@ Financial Analysis
 --------------------------
 Total months: ${monthNum}
 Total: ${numberFormatter.format(pfSum)}
-Average Change: ${averageChange}
-Greatest Increase in Profits: ${largest}
-Greatest Decrease in Profits: ${smallest}
+Average Change: ${numberFormatter.format(Math.round(100 * averageChange)/100)}
+Greatest Increase in Profits: ${largest[0]} ${numberFormatter.format(largest[1])}
+Greatest Decrease in Profits: ${smallest[0]} ${numberFormatter.format(smallest[1])}
 
 
 `)
