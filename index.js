@@ -95,13 +95,16 @@ of the finance variable
 * i need to create a for loop which work out changes in profit/loss and store in an array called variable.
 * sum the array and then divide by total number of months. 
 */
-
-// no. of months total //
+//------------------------------------------------------ total number of months ---------------------------------------------------------------------//
+// total months is the length of finances variable
 console.log(finances.length) 
-
+// created monthNum variable to store this length
 const monthNum = finances.length;
-let pfSum = 0;
 
+//-------------------------------------------------------- net total of profit/losses ---------------------------------------------------------------//
+
+let pfSum = 0; // pfSum to sum all of the profit/loss value
+// for loop which adds all of the profit loss values to pfSum
 for (i = 0; i < monthNum; i++) {
     pfSum += finances[i][1]
 }
@@ -109,35 +112,40 @@ for (i = 0; i < monthNum; i++) {
 // sum of profit/loss //
 console.log(pfSum)
 
-let numbers = [];
+//---------------------------------------------------------- average of changes in profit/losses ----------------------------------------------------//
 
+let numbers = []; // creating new array to store all the profit/loss values in order to calculate changes
+// for loop which pushes profit/loss values to numbers
 for (i = 0; i < monthNum; i++) {
     numbers.push(finances[i][1]);
 }
 // new array with just the numbers // 
 console.log(numbers)
 
-let changes = [];
-
+let changes = []; // new array which will contain the values of the changes
+// for loop which calculates changes and stores in the changes variable
 for (i = 0; i < numbers.length; i++) {
     changes.push(numbers[i] - numbers[i-1]);
 }
 
 // new array with just changes // 
 console.log(changes);
-
-changes.splice(0, 1, finances[0][1]);
+// ERROR, changes variable contains naN value at the start as there is no [i-1] value//
+changes.splice(0, 1, finances[0][1]); // delete the first element of array and replaces it with 
 
 console.log(changes)
-
-let cSum = 0;
-
+//----------------------------------------------------- Calculate average change!!! ------------------------------------------------------------------//
+let cSum = 0; // new variable to add the changes
+// created for loop to add the values from changes to cSum variable
 for (i = 0; i < changes.length; i++) {
     cSum += changes[i];
 }
 
 console.log(cSum)
 
-let averageChange = cSum / monthNum;
+let averageChange = cSum / monthNum; // calculating average by dividing cSum by monthNum (total number of months!)
 
-console.log(averageChange)
+console.log(averageChange);
+
+
+
