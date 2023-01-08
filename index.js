@@ -97,7 +97,7 @@ of the finance variable
 */
 //------------------------------------------------------ total number of months ---------------------------------------------------------------------//
 // total months is the length of finances variable
-console.log(finances.length) 
+//console.log(finances.length) 
 // created monthNum variable to store this length
 const monthNum = finances.length;
 
@@ -110,7 +110,7 @@ for (i = 0; i < monthNum; i++) {
 }
 
 // sum of profit/loss //
-console.log(pfSum)
+//console.log(pfSum)
 
 //---------------------------------------------------------- average of changes in profit/losses ----------------------------------------------------//
 
@@ -120,7 +120,7 @@ for (i = 0; i < monthNum; i++) {
     numbers.push(finances[i][1]);
 }
 // new array with just the numbers // 
-console.log(numbers)
+//console.log(numbers)
 
 let changes = []; // new array which will contain the values of the changes
 // for loop which calculates changes and stores in the changes variable
@@ -129,11 +129,11 @@ for (i = 0; i < numbers.length; i++) {
 }
 
 // new array with just changes // 
-console.log(changes);
+//console.log(changes);
 // ERROR, changes variable contains naN value at the start as there is no [i-1] value//
 changes.splice(0, 1, finances[0][1]); // delete the first element of array and replaces it with 
 
-console.log(changes)
+//console.log(changes)
 //----------------------------------------------------- Calculate average change!!! ------------------------------------------------------------------//
 let cSum = 0; // new variable to add the changes
 // created for loop to add the values from changes to cSum variable
@@ -141,11 +141,11 @@ for (i = 0; i < changes.length; i++) {
     cSum += changes[i];
 }
 
-console.log(cSum)
+//console.log(cSum)
 
 let averageChange = cSum / monthNum; // calculating average by dividing cSum by monthNum (total number of months!)
 
-console.log(averageChange);
+//console.log(averageChange);
 
 //------------------------------------------------------- Calculate the largest smallest values in profit losses -------------------------------------//
  
@@ -157,7 +157,7 @@ for (i = 0; i < numbers.length; i++) {
     }
 }
 
-console.log(largest)
+//console.log(largest)
 // for loop which loops the finance array, find the nested array which contains the same value and sets the largest value to = the date and value
 for (i = 0; i < finances.length; i++) {
     if (largest === finances[i][1]){
@@ -165,7 +165,7 @@ for (i = 0; i < finances.length; i++) {
     }
 }
 
-console.log(largest)
+//console.log(largest)
 
 let smallest = 0; // smallest to store min value
 // for loop: if smallest is larger than numbers[i] then smallest = numbers[i]
@@ -175,7 +175,7 @@ for (i = 0 ; i < numbers.length; i++) {
     }
 }
 
-console.log(smallest);
+//console.log(smallest);
 
 for (i = 0; i < numbers.length; i++) {
     if (smallest === finances[i][1]) {
@@ -183,7 +183,7 @@ for (i = 0; i < numbers.length; i++) {
     }
 }
 
-console.log(smallest)
+//console.log(smallest)
 
 //-----------------------------------------------------------------formatting numbers to display as currency-----------------------------------------//
 
@@ -191,8 +191,6 @@ const numberFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
 })
-
-
 
 //-------------------------------------------------------------------- console display --------------------------------------------------------------//
 
@@ -204,8 +202,6 @@ Total: ${numberFormatter.format(pfSum)}
 Average Change: ${numberFormatter.format(Math.round(100 * averageChange)/100)}
 Greatest Increase in Profits: ${largest[0]} ${numberFormatter.format(largest[1])}
 Greatest Decrease in Profits: ${smallest[0]} ${numberFormatter.format(smallest[1])}
-
-
 `)
 
 
