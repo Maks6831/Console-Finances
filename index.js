@@ -130,3 +130,14 @@ changes.splice(0, 1, finances[0][1]);
 
 console.log(changes)
 
+let cSum = 0;
+
+for (i = 0; i < changes.length; i++) {
+    cSum += changes[i];
+}
+
+console.log(cSum)
+
+let averageChange = cSum / monthNum;
+
+console.log(averageChange)
