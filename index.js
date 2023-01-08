@@ -158,6 +158,14 @@ for (i = 0; i < numbers.length; i++) {
 }
 
 console.log(largest)
+// for loop which loops the finance array, find the nested array which contains the same value and sets the largest value to = the date and value
+for (i = 0; i < finances.length; i++) {
+    if (largest === finances[i][1]){
+        largest = finances[i];
+    }
+}
+
+console.log(largest)
 
 let smallest = 0; // smallest to store min value
 // for loop: if smallest is larger than numbers[i] then smallest = numbers[i]
@@ -168,5 +176,34 @@ for (i = 0 ; i < numbers.length; i++) {
 }
 
 console.log(smallest);
+
+for (i = 0; i < numbers.length; i++) {
+    if (smallest === finances[i][1]) {
+        smallest = finances[i];
+    }
+}
+
+console.log(smallest)
+
+//-----------------------------------------------------------------formatting numbers to display as currency-----------------------------------------//
+
+let pfSumFormatted = new Intl.NumberFormat('en-US', {
+    style: 'Currency',
+    currency: 'USD',
+}).format(pfSum);
+
+//-------------------------------------------------------------------- console display --------------------------------------------------------------//
+
+console.log(`
+Financial Analysis
+--------------------------
+Total months: ${monthNum}
+Total: ${pfSumFormatted}
+Average Change: ${averageChange}
+Greatest Increase in Profits: ${largest}
+Greatest Decrease in Profits: ${smallest}
+
+
+`)
 
 
