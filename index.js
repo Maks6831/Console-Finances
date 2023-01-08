@@ -147,5 +147,26 @@ let averageChange = cSum / monthNum; // calculating average by dividing cSum by 
 
 console.log(averageChange);
 
+//------------------------------------------------------- Calculate the largest smallest values in profit losses -------------------------------------//
+ 
+let largest = 0;
+
+for (i = 0; i < numbers.length; i++) {
+    if (largest < numbers[i]) {
+        largest = numbers[i];
+    }
+}
+
+console.log(largest)
+
+let smallest = 0;
+
+for (i = 0 ; i < numbers.length; i++) {
+    if (smallest > numbers[i]) {
+        smallest = numbers[i];
+    }
+}
+
+console.log(smallest);
 
 
