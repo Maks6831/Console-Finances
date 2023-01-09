@@ -2,9 +2,7 @@
 
 ### Project Description 
 
-The purpose of this project was to design and create a portfolio webpage using bootstrap. The webpage contains a bootstrap navbar, jumbotron and utilizes cards to showcase the projects I have created during the course of the bootcamp thus far. All links have a hover effect and 
-and all buttons have a box shadow effect on hover. The Work section utilizes the Bootstrap grid layout and the cards are designed so that when the end user hovers over them the project description and button appear.
-
+The purpose of this project was to analyze the financial data of a company the spans across 86 months. An array was provided giving data on the profits or losses per month and company requested to recieve the following data: total months, total revenue, average change in profit/loss, highest grossing month and most forfeiting month. Javascript was used to manipulate the data and the results were logged on to the console of the webpage. The project used if statements, for loops, arrays etc. to manipulate the data successfully. The javascript is contained in the script.js file where you will find a plethora of comments to help you navigate through the code. 
 
 ### Screenshot
 
