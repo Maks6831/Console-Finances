@@ -2,7 +2,7 @@
 
 ### Project Description 
 
-The purpose of this project was to analyze the financial data of a company the spans across 86 months. An array was provided giving data on the profits or losses per month and company requested to recieve the following data: total months, total revenue, average change in profit/loss, highest grossing month and most forfeiting month. Javascript was used to manipulate the data and the results were logged on to the console of the webpage. The project used if statements, for loops, arrays etc. to manipulate the data successfully. The javascript is contained in the script.js file where you will find a plethora of comments to help you navigate through the code. 
+The purpose of this project was to analyze the financial data of a company that spans across 86 months. An array was provided giving data on the profits or losses per month and the company requested to recieve the following data: total months, total revenue, average change in profit/loss, highest grossing month and greatest forfeiting month. Javascript was used to manipulate the data and the results were logged on to the console of the webpage. The project used if statements, for loops, arrays etc. to manipulate the data successfully. The javascript is contained in the script.js file where you will find a plethora of comments to help you navigate through the code. 
 
 ### Screenshot
 
