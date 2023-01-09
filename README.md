@@ -6,7 +6,7 @@ The purpose of this project was to analyze the financial data of a company the s
 
 ### Screenshot
 
-
+![Screenshot 2023-01-09 at 23 42 26](https://user-images.githubusercontent.com/118021969/211430285-ef2add5f-ac4a-42e9-877b-1c7b57f17c71.png)
 
 
 ### Link to Deployed Webpage
