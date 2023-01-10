@@ -131,10 +131,11 @@ for (i = 0; i < numbers.length; i++) {
 // new array with just changes // 
 //console.log(changes);
 // ERROR, changes variable contains naN value at the start as there is no [i-1] value//
-changes.splice(0, 1, finances[0][1]); // delete the first element of array and replaces it with 
+changes.splice(0, 1, finances[0][1]); // delete the first element of array and replaces it with finance[0][1] 
 
 //console.log(changes)
 //----------------------------------------------------- Calculate average change!!! ------------------------------------------------------------------//
+
 let cSum = 0; // new variable to add the changes
 // created for loop to add the values from changes to cSum variable
 for (i = 0; i < changes.length; i++) {
@@ -148,6 +149,7 @@ let averageChange = cSum / monthNum; // calculating average by dividing cSum by 
 //console.log(averageChange);
 
 //------------------------------------------------------- Calculate the largest smallest values in profit losses -------------------------------------//
+// Assumption made that it is the largest/smallest values wanted from profit/loss (in finances variable) rather change largest/smallest in the changes variable//
  
 let largest = 0; // create largest to store max value
 // for loop: if largest is smaller than numbers[i] then largest = numbers[i]
@@ -187,6 +189,7 @@ for (i = 0; i < numbers.length; i++) {
 
 //-----------------------------------------------------------------formatting numbers to display as currency-----------------------------------------//
 
+// formatter which when used adds commas, dollar sign and also rounds the value to the nearest 100th
 const numberFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
