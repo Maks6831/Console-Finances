@@ -160,7 +160,7 @@ for (i = 0; i < numbers.length; i++) {
 }
 
 //console.log(largest)
-// for loop which loops the finance array, find the nested array which contains the same value and sets the largest value to = the date and value
+// for loop which loops the finance array, finds the nested array which contains the same value and sets the largest value to = the date and value
 for (i = 0; i < finances.length; i++) {
     if (largest === finances[i][1]){
         largest = finances[i];
@@ -178,7 +178,7 @@ for (i = 0 ; i < numbers.length; i++) {
 }
 
 //console.log(smallest);
-
+// for loop which loops the finance array, finds the nested array which contains the same value and sets the smallest value to = the date and value
 for (i = 0; i < numbers.length; i++) {
     if (smallest === finances[i][1]) {
         smallest = finances[i];
